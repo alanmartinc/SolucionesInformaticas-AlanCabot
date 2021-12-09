@@ -1,3 +1,4 @@
+/* Globals */
 * {
     margin: 1px;
 }
@@ -5,10 +6,12 @@
 body {
     background-color: #111;
 }
-main{
+
+main {
     width: 100%;
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -29,14 +32,11 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 header .navbar {
     display: flex;
-}
-
-nav.navbar-mobile {
-    display: none;
 }
 
 header .navbar-img {
@@ -72,31 +72,7 @@ header .navbar-img img {
     height: 48px;
 }
 
-ul.navbar-header {
-    display: flex;
-    align-items: center;
-    padding: 0px;
-}
-
-ul.navbar-header li {
-    list-style: none;
-    padding: 0 30px 0 30px;
-    background-color: #fff;
-    border: 1px solid black;
-    height: 20px;
-}
-
-ul.navbar-header li a {
-    text-decoration: none;
-    color: black;
-}
-
-ul.navbar-header li:hover {
-    background-color: rgb(205, 232, 255);
-}
-
 /* Section */
-
 .align-image {
     margin: 20px 0 20px 0;
     display: flex;
@@ -170,7 +146,7 @@ ul.navbar-header li:hover {
     margin: 20px 30px 20px 30px;
     border: 2px solid rgb(255, 190, 84);
     background-color: #fff;
-    height: 330px;
+    height: 396px;
     background: linear-gradient(90deg, rgba(219,237,255,1) 0%, rgba(205,232,255,1) 35%, rgba(101,176,255,1) 100%);
     transition: 300ms;
 }
@@ -324,9 +300,15 @@ footer .text-footer {
     justify-content: center;
 }
 
-/* ipads y tablets */
+/* Ipads y tablets */
 @media (max-width: 1024px) {
     /* Header Generic */
+    header {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
     .align-portfolio {
         margin: 20px 10px 20px 10px;
     }
@@ -352,10 +334,6 @@ footer .text-footer {
 
     .cards-section {
         width: 665px;
-    }
-
-    .align-card {
-        height: 310px;
     }
 
     .text-section p {
@@ -387,34 +365,13 @@ footer .text-footer {
         font-size: 14px;
     }
 }
-/* moviles grandes */
+/* Big mobile */
 @media (max-width: 768px) {
     /* Header Generic */
-    ul.navbar-header, .navbar-img img {
-        display: none;
-    }
-
-    nav.navbar-mobile {
-        display: none;
-    }
-
-    nav.navbar-mobile {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav.navbar-mobile .navbar-img-mobile {
-        width: 100%;
-    }
-
-    nav.navbar-mobile .navbar-img-mobile img {
-        width: 40px;
-    }
-
-    nav.navbar-mobile .menu-hamburguesa img {
-        width: 40px;
+    header {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     /* Section */
@@ -428,7 +385,7 @@ footer .text-footer {
     }
     
     .text-section h3 {
-        font-size: 16px;
+        font-size: 21px;
     }
 
     .align-video iframe {
@@ -439,10 +396,6 @@ footer .text-footer {
     .cards-section {
         grid-template-columns: 1fr;
         width: 519px;
-    }
-
-    .align-card {
-        height: 335px;
     }
 
     .text-section p {
@@ -466,7 +419,7 @@ footer .text-footer {
     }
     .align-form form fieldset {
         width: 392px;
-        height: 428px;
+        height: 522px;
     }
 
     .text-form h3 {
@@ -483,30 +436,13 @@ footer .text-footer {
     }
 }
 
-/*mobiles pequeños*/
+/* Small mobile */
 @media (max-width: 480px) {
     /* Header Generic */
-    nav.navbar-mobile {
-        display: none;
-    }
-
-    nav.navbar-mobile {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav.navbar-mobile .navbar-img-mobile {
-        width: 100%;
-    }
-
-    nav.navbar-mobile .navbar-img-mobile img {
-        width: 30px;
-    }
-
-    nav.navbar-mobile .menu-hamburguesa img {
-        width: 30px;
+    header {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     /* Section */
@@ -555,7 +491,7 @@ footer .text-footer {
 
     .align-form form fieldset {
         width: 280px;
-        height: 415px;
+        height: 522px;
     }
 
     .text-form h3 {
