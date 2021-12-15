@@ -1,0 +1,38 @@
+/* Footer */
+footer {
+    margin-top: 20px;
+
+    .navbar-footer {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        li {
+            list-style: none;
+            height: 20px;
+
+            a {
+                text-decoration: none;
+                padding-right: 10px;
+                padding-left: 10px;
+                border-right: 2px solid #fff;
+                display: flex;
+                align-items: center;
+                color: #999;
+
+                &:hover {
+                    color: rgb(255, 190, 84);
+                }
+            }
+        }
+    }
+
+    .text-footer {
+        font-family: 'Shippori', sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+}

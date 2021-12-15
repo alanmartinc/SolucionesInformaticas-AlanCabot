@@ -1,0 +1,194 @@
+/* Section */
+main {
+    section {
+        .align-image {
+            margin: 20px 0 20px 0;
+            display: flex;
+            justify-content: center;
+        
+            img {
+                width: 474px;
+                height: 506px;
+            }
+        }
+        
+        .text-section {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-family: 'Signika', sans-serif;
+                color: $yellow;
+            }
+
+            h3 {
+                font-family: 'Shippori', sans-serif;
+                color: $gray;
+                margin-top: 15px;
+            }
+
+            hr {
+                box-sizing: content-box;
+                height: 0;
+                width: 770px;
+                overflow: visible;
+                border: 1px solid $gray;
+            }
+
+            p {
+                margin: 15px 0 15px 0;
+                font-family: 'Shippori', sans-serif;
+                color: $white;
+                width: 770px;
+            }
+
+            div {
+                .left {
+                    text-align: left;
+                }
+
+                .right {
+                    text-align: right;
+                }
+            }
+
+            .align-video {
+                margin: 20px 0 20px 0;
+    
+                iframe {
+                    width: 600px;
+                    height: 450px;
+                }
+            }
+        }
+
+        .button-section {
+            display: flex;
+            justify-content: center;
+
+            button {
+                background-color: rgb(255, 190, 84);
+                margin-bottom: 25px;
+                width: 77px;
+
+                a {
+                    text-decoration: none;
+                    color: #111;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    background: #999;
+                }
+            }
+        }
+
+        .cards-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            margin: 0 auto;
+
+            .align-card {
+                margin: 20px 30px 20px 30px;
+                transition: 300ms;
+
+                &:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+
+        .portfolio-section {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0 30px 0;
+
+            .align-portfolio {
+                margin: 20px 40px 20px 40px;
+
+                img {
+                    width: 340px;
+                    height: 670px;
+                }
+            }
+        }
+        
+        .form-section {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0 30px 0;
+
+            .align-form {
+                margin: 20px 40px 20px 40px;
+
+                form {
+                    fieldset {
+                        display: flex;
+                        justify-content: center;
+                        width: 875px;
+                        background-color: #fff;
+                        border: 2px solid rgb(255, 190, 84);
+
+                        .items-center {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+
+                            div {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                            }
+
+                            .text-form {
+                                display: flex;
+                                justify-content: center;
+
+                                h3 {
+                                    font-family: 'Shippori', sans-serif;
+                                    color: #111;
+                                    margin-top: 15px;
+                                }
+                            }
+
+                            .align-inputs {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                div {
+                                    input{
+                                        height: 20px;
+                                        padding: 10px;
+                                    }
+                                }
+
+                                .button-form {
+                                    display: flex;
+                                    justify-content: start;
+                        
+                                    button {
+                                        background-color: rgb(255, 190, 84);
+                                        margin-bottom: 25px;
+                        
+                                        a {
+                                            text-decoration: none;
+                                            color: #111;
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

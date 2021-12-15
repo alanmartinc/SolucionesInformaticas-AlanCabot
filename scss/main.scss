@@ -1,5 +1,21 @@
 @import "./variables/colors";
 @import "./variables/fonts";
+
+/* Globals */
+body {
+    background-color: $black;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 @import "header";
 @import "section";
 @import "footer";
