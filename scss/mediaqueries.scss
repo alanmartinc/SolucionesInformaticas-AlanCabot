@@ -132,7 +132,7 @@
                 p {
                     margin: 15px 0 15px 0;
                     font-size: 12px;
-                    width: 355px;
+                    width: 344px;
                 }
 
                 .align-video {
@@ -149,6 +149,20 @@
 
                     a {
                         font-size: 12px;
+                    }
+                }
+            }
+
+            .cards-section {
+                .align-card {
+                    margin: 10px 15px 10px 15px;
+    
+                    .card {
+                        width: 212px;
+    
+                        img {
+                            height: 114px;
+                        }
                     }
                 }
             }
@@ -237,7 +251,7 @@
                 p {
                     margin: 15px 0 15px 0;
                     font-size: 12px;
-                    width: 298px;
+                    width: 290px;
                 }
 
                 .align-video {
@@ -254,6 +268,21 @@
 
                     a {
                         font-size: 12px;
+                    }
+                }
+            }
+
+            .cards-section {    
+                display: flex;
+                flex-direction: column;
+                
+                .align-card {
+                    .card {
+                        width: 212px;
+    
+                        img {
+                            height: 114px;
+                        }
                     }
                 }
             }

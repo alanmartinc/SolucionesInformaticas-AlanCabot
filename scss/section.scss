@@ -22,12 +22,14 @@ main {
             h2 {
                 font-family: 'Signika', sans-serif;
                 color: $yellow;
+                font-size: $gamma;
             }
 
             h3 {
                 font-family: 'Shippori', sans-serif;
                 color: $gray;
                 margin-top: 15px;
+                font-size: $beta;
             }
 
             hr {
@@ -42,7 +44,8 @@ main {
                 margin: 15px 0 15px 0;
                 font-family: 'Shippori', sans-serif;
                 color: $white;
-                width: 770px;
+                font-size: $alpha;
+                width: 596px;
             }
 
             div {
@@ -70,19 +73,19 @@ main {
             justify-content: center;
 
             button {
-                background-color: rgb(255, 190, 84);
+                background-color: $yellow;
                 margin-bottom: 25px;
                 width: 77px;
 
                 a {
                     text-decoration: none;
-                    color: #111;
-                    font-size: 16px;
+                    color: $black;
+                    font-size: $alpha;
                     font-weight: 500;
                 }
 
                 &:hover {
-                    background: #999;
+                    background: $gray;
                 }
             }
         }
@@ -99,6 +102,14 @@ main {
 
                 &:hover {
                     transform: scale(0.9);
+                }
+
+                .card {
+                    width: 270px;
+
+                    img {
+                        height: 170px;
+                    }
                 }
             }
         }
@@ -131,8 +142,8 @@ main {
                         display: flex;
                         justify-content: center;
                         width: 875px;
-                        background-color: #fff;
-                        border: 2px solid rgb(255, 190, 84);
+                        background-color: $white;
+                        border: 2px solid $yellow;
 
                         .items-center {
                             display: flex;
@@ -151,7 +162,7 @@ main {
 
                                 h3 {
                                     font-family: 'Shippori', sans-serif;
-                                    color: #111;
+                                    color: $black;
                                     margin-top: 15px;
                                 }
                             }
@@ -173,13 +184,13 @@ main {
                                     justify-content: start;
                         
                                     button {
-                                        background-color: rgb(255, 190, 84);
+                                        background-color: $yellow;
                                         margin-bottom: 25px;
                         
                                         a {
                                             text-decoration: none;
-                                            color: #111;
-                                            font-size: 16px;
+                                            color: $black;
+                                            font-size: $alpha;
                                             font-weight: 500;
                                         }
                                     }
