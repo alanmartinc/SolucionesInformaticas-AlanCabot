@@ -68,11 +68,13 @@ main section .text-section {
   align-items: center; }
   main section .text-section h2 {
     font-family: 'Signika', sans-serif;
-    color: #ffbe54; }
+    color: #ffbe54;
+    font-size: 26px; }
   main section .text-section h3 {
     font-family: 'Shippori', sans-serif;
     color: #999;
-    margin-top: 15px; }
+    margin-top: 15px;
+    font-size: 22px; }
   main section .text-section hr {
     box-sizing: content-box;
     height: 0;
@@ -83,7 +85,8 @@ main section .text-section {
     margin: 15px 0 15px 0;
     font-family: 'Shippori', sans-serif;
     color: #fff;
-    width: 770px; }
+    font-size: 16px;
+    width: 596px; }
   main section .text-section div .left {
     text-align: left; }
   main section .text-section div .right {
@@ -119,6 +122,10 @@ main section .cards-section {
     transition: 300ms; }
     main section .cards-section .align-card:hover {
       transform: scale(0.9); }
+    main section .cards-section .align-card .card {
+      width: 270px; }
+      main section .cards-section .align-card .card img {
+        height: 170px; }
 
 main section .portfolio-section {
   display: flex;
@@ -267,7 +274,7 @@ footer {
   main section .text-section p {
     margin: 15px 0 15px 0;
     font-size: 12px;
-    width: 355px; }
+    width: 344px; }
   main section .text-section .align-video iframe {
     width: 350px;
     height: 250px; }
@@ -275,6 +282,12 @@ footer {
     width: 60px; }
     main section .button-section button a {
       font-size: 12px; }
+  main section .cards-section .align-card {
+    margin: 10px 15px 10px 15px; }
+    main section .cards-section .align-card .card {
+      width: 212px; }
+      main section .cards-section .align-card .card img {
+        height: 114px; }
   main section .portfolio-section {
     flex-direction: column;
     align-items: center; }
@@ -314,7 +327,7 @@ footer {
   main section .text-section p {
     margin: 15px 0 15px 0;
     font-size: 12px;
-    width: 298px; }
+    width: 290px; }
   main section .text-section .align-video iframe {
     width: 300px;
     height: 150px; }
@@ -322,6 +335,13 @@ footer {
     width: 60px; }
     main section .button-section button a {
       font-size: 12px; }
+  main section .cards-section {
+    display: flex;
+    flex-direction: column; }
+    main section .cards-section .align-card .card {
+      width: 212px; }
+      main section .cards-section .align-card .card img {
+        height: 114px; }
   main section .portfolio-section {
     flex-direction: column;
     align-items: center; }

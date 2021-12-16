@@ -17,13 +17,13 @@ footer {
                 text-decoration: none;
                 padding-right: 10px;
                 padding-left: 10px;
-                border-right: 2px solid #fff;
+                border-right: 2px solid $white;
                 display: flex;
                 align-items: center;
-                color: #999;
+                color: $gray;
 
                 &:hover {
-                    color: rgb(255, 190, 84);
+                    color: $yellow;
                 }
             }
         }
@@ -31,7 +31,7 @@ footer {
 
     .text-footer {
         font-family: 'Shippori', sans-serif;
-        color: #fff;
+        color: $white;
         display: flex;
         justify-content: center;
     }
