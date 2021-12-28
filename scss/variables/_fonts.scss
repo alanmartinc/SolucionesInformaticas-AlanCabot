@@ -1,0 +1,8 @@
+$alpha: 16px;
+$beta: 22px;
+$gamma: 26px;
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}

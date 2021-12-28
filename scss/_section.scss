@@ -2,13 +2,12 @@
 main {
     section {
         .align-image {
-            margin: 20px 0 20px 0;
+            @include margin($top: 20px, $right: 0px, $bottom: 20px, $left: 0px);
             display: flex;
             justify-content: center;
         
             img {
-                width: 474px;
-                height: 506px;
+                @include size($width: 474px, $height: 506px);
             }
         }
         
@@ -26,44 +25,45 @@ main {
             }
 
             h3 {
+                @include margin($top: 15px);
                 font-family: 'Shippori', sans-serif;
                 color: $gray;
-                margin-top: 15px;
                 font-size: $beta;
             }
 
             hr {
+                @include size($width: 770px, $height: 0);
                 box-sizing: content-box;
-                height: 0;
-                width: 770px;
                 overflow: visible;
                 border: 1px solid $gray;
             }
 
             p {
-                margin: 15px 0 15px 0;
+                @include size($width: 596px);
+                @include margin($top: 15px, $right: 0px, $bottom: 15px, $left: 0px);
                 font-family: 'Shippori', sans-serif;
                 color: $white;
                 font-size: $alpha;
-                width: 596px;
             }
 
             div {
-                .left {
+                .left-h3 {
                     text-align: left;
+
+                    /* Extend */
+                    @extend h2;
                 }
 
-                .right {
-                    text-align: right;
+                .left-p {
+                    text-align: left;
                 }
             }
 
             .align-video {
-                margin: 20px 0 20px 0;
+                @include margin($top: 20px, $right: 0px, $bottom: 20px, $left: 0px);
     
                 iframe {
-                    width: 600px;
-                    height: 450px;
+                    @include size($width: 600px, $height: 450px);
                 }
             }
         }
@@ -73,9 +73,9 @@ main {
             justify-content: center;
 
             button {
+                @include margin($bottom: 25px);
+                @include size($width: 77px);
                 background-color: $yellow;
-                margin-bottom: 25px;
-                width: 77px;
 
                 a {
                     text-decoration: none;
@@ -97,7 +97,7 @@ main {
             margin: 0 auto;
 
             .align-card {
-                margin: 20px 30px 20px 30px;
+                @include margin($top: 20px, $right: 30px, $bottom: 20px, $left: 30px);
                 transition: 300ms;
 
                 &:hover {
@@ -105,45 +105,48 @@ main {
                 }
 
                 .card {
-                    width: 270px;
+                    @include size($width: 270px);
+                    border-radius: 10px;
 
                     img {
-                        height: 170px;
+                        @include size($height: 170px);
+                        border-radius: 10px;
                     }
                 }
             }
         }
 
         .portfolio-section {
+            @include margin($top: 30px, $right: 0px, $bottom: 30px, $left: 0px);
             display: flex;
             justify-content: center;
-            margin: 30px 0 30px 0;
 
             .align-portfolio {
-                margin: 20px 40px 20px 40px;
+                @include margin($top: 20px, $right: 40px, $bottom: 20px, $left: 40px);
 
                 img {
-                    width: 340px;
-                    height: 670px;
+                    @include size($width: 340px, $height: 670px);
+                    border-radius: 10px;
                 }
             }
         }
         
         .form-section {
+            @include margin($top: 30px, $right: 0px, $bottom: 30px, $left: 0px);
             display: flex;
             justify-content: center;
-            margin: 30px 0 30px 0;
 
             .align-form {
-                margin: 20px 40px 20px 40px;
+                @include margin($top: 20px, $right: 40px, $bottom: 20px, $left: 40px);
 
                 form {
                     fieldset {
+                        @include size($width: 875px);
                         display: flex;
                         justify-content: center;
-                        width: 875px;
                         background-color: $white;
                         border: 2px solid $yellow;
+                        border-radius: 10px;
 
                         .items-center {
                             display: flex;
@@ -151,9 +154,9 @@ main {
                             flex-direction: column;
 
                             div {
+                                @include size($width: 100%);
                                 display: flex;
                                 flex-direction: column;
-                                width: 100%;
                             }
 
                             .text-form {
@@ -161,9 +164,9 @@ main {
                                 justify-content: center;
 
                                 h3 {
+                                    @include margin($top: 15px);
                                     font-family: 'Shippori', sans-serif;
                                     color: $black;
-                                    margin-top: 15px;
                                 }
                             }
 
@@ -173,8 +176,8 @@ main {
                                 align-items: center;
 
                                 div {
-                                    input{
-                                        height: 20px;
+                                    input {
+                                        @include size($height: 20px);
                                         padding: 10px;
                                     }
                                 }
