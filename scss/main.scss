@@ -1,5 +1,7 @@
 @import "./variables/colors";
 @import "./variables/fonts";
+@import "./variables/margin";
+@import "./variables/padding";
 
 /* Fonts */
 @font-face {
@@ -27,6 +29,7 @@ section {
     width: 100%;
 }
 
+@import "icons";
 @import "header";
 @import "section";
 @import "footer";

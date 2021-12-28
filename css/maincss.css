@@ -19,6 +19,39 @@ section {
   flex-direction: column;
   width: 100%; }
 
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+  /* Mapa */ }
+  .social-bar a img {
+    width: 20px; }
+  .social-bar .icon {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    transition: all 0.5s; }
+    .social-bar .icon:first-child {
+      border-radius: 1rem 0 0 0; }
+    .social-bar .icon:last-child {
+      border-radius: 0 0 0 1rem; }
+    .social-bar .icon:hover {
+      padding-right: 3rem;
+      border-radius: 1rem 0 0 1rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42); }
+  .social-bar .icon-facebook {
+    background: #3B5998; }
+  .social-bar .icon-twitter {
+    background: #339dc5; }
+  .social-bar .icon-instagram {
+    background: #3f729b; }
+
 /* Header */
 header {
   display: flex;
@@ -26,7 +59,8 @@ header {
   margin-top: 20px;
   margin-bottom: 20px; }
   header .navbar {
-    display: flex; }
+    display: flex;
+    border-radius: 10px; }
     header .navbar img {
       margin-right: 20px;
       width: 48px;
@@ -66,7 +100,7 @@ main section .text-section {
   text-align: center;
   flex-direction: column;
   align-items: center; }
-  main section .text-section h2 {
+  main section .text-section h2, main section .text-section div .left-h3 {
     font-family: 'Signika', sans-serif;
     color: #ffbe54;
     font-size: 26px; }
@@ -87,10 +121,11 @@ main section .text-section {
     color: #fff;
     font-size: 16px;
     width: 596px; }
-  main section .text-section div .left {
+  main section .text-section div .left-h3 {
+    text-align: left;
+    /* Extend */ }
+  main section .text-section div .left-p {
     text-align: left; }
-  main section .text-section div .right {
-    text-align: right; }
   main section .text-section .align-video {
     margin: 20px 0 20px 0; }
     main section .text-section .align-video iframe {
@@ -123,9 +158,11 @@ main section .cards-section {
     main section .cards-section .align-card:hover {
       transform: scale(0.9); }
     main section .cards-section .align-card .card {
-      width: 270px; }
+      width: 270px;
+      border-radius: 10px; }
       main section .cards-section .align-card .card img {
-        height: 170px; }
+        height: 170px;
+        border-radius: 10px; }
 
 main section .portfolio-section {
   display: flex;
@@ -135,7 +172,8 @@ main section .portfolio-section {
     margin: 20px 40px 20px 40px; }
     main section .portfolio-section .align-portfolio img {
       width: 340px;
-      height: 670px; }
+      height: 670px;
+      border-radius: 10px; }
 
 main section .form-section {
   display: flex;
@@ -148,7 +186,8 @@ main section .form-section {
       justify-content: center;
       width: 875px;
       background-color: #fff;
-      border: 2px solid #ffbe54; }
+      border: 2px solid #ffbe54;
+      border-radius: 10px; }
       main section .form-section .align-form form fieldset .items-center {
         display: flex;
         justify-content: center;
@@ -218,11 +257,13 @@ footer {
     display: block;
     margin-top: 0px;
     margin-bottom: 20px; }
+    header .navbar {
+      border-radius: 0px; }
   /* Section */
   main section .align-image img {
     width: 330px;
     height: auto; }
-  main section .text-section h2 {
+  main section .text-section h2, main section .text-section div .left-h3 {
     font-size: 24px; }
   main section .text-section h3 {
     font-size: 20px; }
@@ -265,7 +306,7 @@ footer {
   main section .align-image img {
     width: 279px;
     height: auto; }
-  main section .text-section h2 {
+  main section .text-section h2, main section .text-section div .left-h3 {
     font-size: 22px; }
   main section .text-section h3 {
     font-size: 18px; }
@@ -318,7 +359,7 @@ footer {
   main section .align-image img {
     width: 250px;
     height: auto; }
-  main section .text-section h2 {
+  main section .text-section h2, main section .text-section div .left-h3 {
     font-size: 20px; }
   main section .text-section h3 {
     font-size: 16px; }
