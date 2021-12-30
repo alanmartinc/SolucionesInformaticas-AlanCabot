@@ -2,12 +2,13 @@
 main {
     section {
         .align-image {
-            @include margin($top: 20px, $right: 0px, $bottom: 20px, $left: 0px);
+            @include margin(20px, 0px, 20px, 0px);
             display: flex;
             justify-content: center;
         
             img {
-                @include size($width: 474px, $height: 506px);
+                width: 474px;
+                height: 506px;
             }
         }
         
@@ -18,40 +19,41 @@ main {
             flex-direction: column;
             align-items: center;
 
-            h2 {
+            h1 {
                 font-family: 'Signika', sans-serif;
                 color: $yellow;
                 font-size: $gamma;
             }
 
-            h3 {
-                @include margin($top: 15px);
+            h2 {
+                @include margin(15px, 0px, 0px, 0px);
                 font-family: 'Shippori', sans-serif;
                 color: $gray;
                 font-size: $beta;
             }
 
             hr {
-                @include size($width: 770px, $height: 0);
+                width: 586px;
+                height: 0px;
                 box-sizing: content-box;
                 overflow: visible;
                 border: 1px solid $gray;
             }
 
             p {
-                @include size($width: 596px);
-                @include margin($top: 15px, $right: 0px, $bottom: 15px, $left: 0px);
+                @include margin(15px, 0px, 15px, 0px);
+                width: 596px;
                 font-family: 'Shippori', sans-serif;
                 color: $white;
                 font-size: $alpha;
             }
 
             div {
-                .left-h3 {
+                .left-h2 {
                     text-align: left;
 
                     /* Extend */
-                    @extend h2;
+                    @extend h1;
                 }
 
                 .left-p {
@@ -60,10 +62,11 @@ main {
             }
 
             .align-video {
-                @include margin($top: 20px, $right: 0px, $bottom: 20px, $left: 0px);
+                @include margin(20px, 0px, 20px, 0px);
     
                 iframe {
-                    @include size($width: 600px, $height: 450px);
+                    width: 600px;
+                    height: 450px;
                 }
             }
         }
@@ -73,8 +76,8 @@ main {
             justify-content: center;
 
             button {
-                @include margin($bottom: 25px);
-                @include size($width: 77px);
+                @include margin(0px, 0px, 25px, 0px);
+                width: 77px;
                 background-color: $yellow;
 
                 a {
@@ -97,7 +100,7 @@ main {
             margin: 0 auto;
 
             .align-card {
-                @include margin($top: 20px, $right: 30px, $bottom: 20px, $left: 30px);
+                @include margin(20px, 30px, 20px, 30px);
                 transition: 300ms;
 
                 &:hover {
@@ -105,43 +108,44 @@ main {
                 }
 
                 .card {
-                    @include size($width: 270px);
                     border-radius: 10px;
+                    width: 270px;
 
                     img {
-                        @include size($height: 170px);
                         border-radius: 10px;
+                        height: 170px;
                     }
                 }
             }
         }
 
         .portfolio-section {
-            @include margin($top: 30px, $right: 0px, $bottom: 30px, $left: 0px);
+            @include margin(30px, 0px, 30px, 0px);
             display: flex;
             justify-content: center;
 
             .align-portfolio {
-                @include margin($top: 20px, $right: 40px, $bottom: 20px, $left: 40px);
+                @include margin(20px, 40px, 20px, 40px);
 
                 img {
-                    @include size($width: 340px, $height: 670px);
+                    width: 340px;
+                    height: 670px;
                     border-radius: 10px;
                 }
             }
         }
         
         .form-section {
-            @include margin($top: 30px, $right: 0px, $bottom: 30px, $left: 0px);
+            @include margin(30px, 0px, 30px, 0px);
             display: flex;
             justify-content: center;
 
             .align-form {
-                @include margin($top: 20px, $right: 40px, $bottom: 20px, $left: 40px);
+                @include margin(20px, 40px, 20px, 40px);
 
                 form {
                     fieldset {
-                        @include size($width: 875px);
+                        width: 875px;
                         display: flex;
                         justify-content: center;
                         background-color: $white;
@@ -154,7 +158,7 @@ main {
                             flex-direction: column;
 
                             div {
-                                @include size($width: 100%);
+                                width: 100%;
                                 display: flex;
                                 flex-direction: column;
                             }
@@ -163,8 +167,8 @@ main {
                                 display: flex;
                                 justify-content: center;
 
-                                h3 {
-                                    @include margin($top: 15px);
+                                h2 {
+                                    @include margin(15px, 0px, 0px, 0px);
                                     font-family: 'Shippori', sans-serif;
                                     color: $black;
                                 }
@@ -177,7 +181,7 @@ main {
 
                                 div {
                                     input {
-                                        @include size($height: 20px);
+                                        height: 20px;
                                         padding: 10px;
                                     }
                                 }
