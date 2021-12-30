@@ -2,7 +2,7 @@
 @media (max-width: 1024px) {
     /* Header */
     header {
-        @include margin($top: 0px, $bottom: 20px);
+        @include margin(0px, 0px, 20px, 0px);
         display: block;
 
         .navbar {
@@ -15,39 +15,41 @@
         section {
             .align-image {
                 img {
-                    @include size($width: 330px, $height: auto);
+                    width: 330px;
+                    height: auto;
                 }
             }
         
             .text-section {
-                h2 {
+                h1 {
                     font-size: 24px;
                 }
         
-                h3 {
+                h2 {
                     font-size: 20px;
                 }
 
                 hr {
-                    @include size($width: 490px);
+                    width: 490px;
                 }
         
                 p {
-                    @include margin($top: 15px, $right: 0px, $bottom: 15px, $left: 0px);
-                    @include size($width: 490px);
+                    @include margin(15px, 0px, 15px, 0px);
+                    width: 490px;
                     font-size: 14px;
                 }
 
                 .align-video {
                     iframe {
-                        @include size($width: 500px, $height: 350px);
+                        width: 500px;
+                        height: 350px;
                     }
                 }
             }
 
             .button-section {
                 button {
-                    @include size($width: 67px);
+                    width: 67px;
 
                     a {
                         font-size: 14px;
@@ -56,21 +58,22 @@
             }
         
             .align-portfolio {
-                @include margin($top: 20px, $right: 10px, $bottom: 20px, $left: 10px);
+                @include margin(20px, 10px, 20px, 10px);
         
                 img {
-                    @include size($width: 310px, $height: 775px);
+                    width: 310px;
+                    height: 775px;
                 }
             }
         
             .align-form {
                 form {
                     fieldset {
-                        @include size($width: 650px !important);
+                        width: 650px !important;
     
                         .items-center {
                             .text-form {
-                                h3 {
+                                h2 {
                                     font-size: 18px;
                                 }
                             }
@@ -101,7 +104,7 @@
 @media (max-width: 768px) {
     /* Header */
     header {
-        @include margin($top: 0px, $bottom: 20px);
+        @include margin(0px, 0px, 20px, 0px);
         display: block;
     }
 
@@ -110,39 +113,41 @@
         section {
             .align-image {
                 img {
-                    @include size($width: 279px, $height: auto);
+                    width: 279px;
+                    height: auto;
                 }
             }
         
             .text-section {
-                h2 {
+                h1 {
                     font-size: 22px;
                 }
         
-                h3 {
+                h2 {
                     font-size: 18px;
                 }
 
                 hr {
-                    @include size($width: 355px);
+                    width: 355px;
                 }
         
                 p {
-                    @include margin($top: 15px, $bottom: 15px);
-                    @include size($width: 344px);
+                    @include margin(15px, 0px, 15px, 0px);
+                    width: 344px;
                     font-size: 12px;
                 }
 
                 .align-video {
                     iframe {
-                        @include size($width: 350px, $height: 250px);
+                        width: 35px;
+                        height: 250px;
                     }
                 }
             }
 
             .button-section {
                 button {
-                    @include size($width: 60px);
+                    width: 60px;
 
                     a {
                         font-size: 12px;
@@ -152,13 +157,13 @@
 
             .cards-section {
                 .align-card {
-                    @include margin($top: 10px, $right: 15px, $bottom: 10px, $left: 15px);
+                    @include margin(10px, 15px, 10px, 15px);
     
                     .card {
-                        @include size($width: 212px);
+                        width: 212px;
     
                         img {
-                            @include size($height: 114px);
+                            height: 114px;
                         }
                     }
                 }
@@ -169,11 +174,12 @@
                 align-items: center;
         
                 .align-portfolio {
-                    @include margin($top: 20px, $right: 10px, $bottom: 20px, $left: 10px);
-                    @include size($width: 90%);
+                    @include margin(20px, 10px, 20px, 10px);
+                    width: 90%;
             
                     img {
-                        @include size($width: 100%, $height: 300px);
+                        width: 100%;
+                        height: 300px;
                     }
                 }
             }
@@ -185,7 +191,7 @@
         
                         .items-center {
                             .text-form {
-                                h3 {
+                                h2 {
                                     font-size: 16px;
                                 }
                             }
@@ -216,7 +222,7 @@
 @media (max-width: 480px) {
     /* Header */
     header {
-        @include margin($top: 0px, $bottom: 20px);
+        @include margin(0px, 0px, 20px, 0px);
         display: block;
     }
 
@@ -225,39 +231,41 @@
         section {
             .align-image {
                 img {
-                    @include size($width: 250px, $height: auto);
+                    width: 250px;
+                    height: auto;
                 }
             }
         
             .text-section {
-                h2 {
+                h1 {
                     font-size: 20px;
                 }
         
-                h3 {
+                h2 {
                     font-size: 16px;
                 }
 
                 hr {
-                    @include size($width: 298px);
+                    width: 298px;
                 }
         
                 p {
-                    @include size($width: 290px);
-                    @include margin($top: 15px, $right: 0px, $bottom: 15px, $left: 0px);
+                    @include margin(15px, 0px, 15px, 0px);
+                    width: 290px;
                     font-size: 12px;
                 }
 
                 .align-video {
                     iframe {
-                        @include size($width: 300px, $height: 150px);
+                        width: 300px;
+                        height: 150px;
                     }
                 }
             }
 
             .button-section {
                 button {
-                    @include size($width: 60px);
+                    width: 60px;
 
                     a {
                         font-size: 12px;
@@ -271,10 +279,10 @@
                 
                 .align-card {
                     .card {
-                        @include size($width: 212px);
+                        width: 212px;
     
                         img {
-                            @include size($height: 114px);
+                            height: 114px;
                         }
                     }
                 }
@@ -285,24 +293,25 @@
                 align-items: center;
         
                 .align-portfolio {
-                    @include margin($top: 20px, $right: 10px, $bottom: 20px, $left: 10px);
+                    @include margin(20px, 10px, 20px, 10px);
                     width: 90%;
                 }
         
                 img {
-                    @include size($width: 100%, $height: 200px);
+                    width: 100%;
+                    height: 200px;
                 }
             }
         
             .align-form {
                 form {
                     fieldset {
-                        @include size($width: 280px !important);
+                        width: 280px !important;
                         padding: 10px;
         
                         .items-center {
                             .text-form {
-                                h3 {
+                                h2 {
                                     font-size: 14px;
                                 }
                             }

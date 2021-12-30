@@ -1,6 +1,6 @@
 /* Header */
 header {
-    @include margin($top: 20px, $bottom: 20px);
+    @include margin(20px, 0px, 20px, 0px);
     display: flex;
     justify-content: center;
 
@@ -9,8 +9,9 @@ header {
         border-radius: 10px;
 
         img {
-            @include margin($right: 20px);
-            @include size($width: 48px, $height: 48px);
+            @include margin(0px, 20px, 0px, 0px);
+            width: 48px;
+            height: 48px;
         }
 
         .navbar-img {
