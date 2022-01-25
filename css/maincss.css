@@ -181,11 +181,34 @@ main section .cards-section {
     main section .cards-section .align-card:hover {
       transform: scale(0.9); }
     main section .cards-section .align-card .card {
-      border-radius: 10px;
       width: 270px; }
       main section .cards-section .align-card .card img {
         border-radius: 10px;
         height: 170px; }
+      main section .cards-section .align-card .card .card-body .card-title {
+        color: #ffbe54;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px; }
+      main section .cards-section .align-card .card .card-body .card-text {
+        text-align: left;
+        color: #999;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        margin-left: 0px; }
+      main section .cards-section .align-card .card .card-body ul {
+        padding-left: 0px;
+        text-align: left;
+        list-style: none; }
+        main section .cards-section .align-card .card .card-body ul li span {
+          color: #00897B;
+          font-weight: 500; }
+      main section .cards-section .align-card .card .card-body.background-black {
+        background-color: #111; }
+        main section .cards-section .align-card .card .card-body.background-black h5, main section .cards-section .align-card .card .card-body.background-black .card-text, main section .cards-section .align-card .card .card-body.background-black ul {
+          color: #fff; }
 
 main section .portfolio-section {
   margin-top: 30px;
@@ -295,6 +318,9 @@ footer {
 
 /* Ipads y tablets */
 @media (max-width: 1024px) {
+  /* Body */
+  body .social-bar {
+    display: none; }
   /* Header */
   header {
     margin-top: 0px;

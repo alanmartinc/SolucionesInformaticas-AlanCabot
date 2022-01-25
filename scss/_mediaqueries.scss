@@ -1,5 +1,12 @@
 /* Ipads y tablets */
 @media (max-width: 1024px) {
+    /* Body */
+    body {
+        .social-bar {
+            display: none
+        }
+    }
+
     /* Header */
     header {
         @include margin(0px, 0px, 20px, 0px);

@@ -108,12 +108,45 @@ main {
                 }
 
                 .card {
-                    border-radius: 10px;
                     width: 270px;
-
+                    
                     img {
                         border-radius: 10px;
                         height: 170px;
+                    }
+
+                    .card-body {
+                        .card-title {
+                            color: $yellow;
+                            @include margin(0px, 0px, 5px, 0px);
+                        }
+
+                        .card-text {
+                            text-align: left;
+                            color: $gray;
+                            @include margin(0px, 0px, 5px, 0px);
+                        }
+
+                        ul {
+                            padding-left: 0px;
+                            text-align: left;
+                            list-style: none;
+
+                            li {
+                                span {
+                                    color: #00897B;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+
+                    .card-body.background-black {
+                        background-color: $black;
+
+                        h5, .card-text, ul {
+                            color: $white;
+                        }
                     }
                 }
             }
